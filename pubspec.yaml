@@ -1,0 +1,23 @@
+name: todo_app
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: '>=2.17.6 <3.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  get: 4.6.5
+
+dev_dependencies:
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  get: ^4.6.5
+
+flutter:
+  uses-material-design: true
