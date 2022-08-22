@@ -19,7 +19,7 @@ class AllPageView extends GetView<AllPageController> {
       child: ListView.builder(
         itemCount: controller.list.length,
         itemBuilder: (context, i) => TaskComponent(
-          onChangeCheck: controller.changeCheckTask(task: cotroller.list[i]),
+          // onChangeCheck: controller.changeCheckTask(task: cotroller.list[i]),
           task: controller.list[i],
         ),
       ),
