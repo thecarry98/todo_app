@@ -11,6 +11,9 @@ import '../../../../routes.dart';
 
 class TaskComponent extends GetView<HomeController> {
   TaskComponent({
+    this.onChangeCheck,
+    this.deleteTask,
+    this.editTask,
     this.task,
     Key? key,
   }) : super(key: key);
@@ -48,7 +51,7 @@ class TaskComponent extends GetView<HomeController> {
                 flex: 2,
                 child: CheckBoxComponent(
                   // isCheck: widget.check ?? false,
-                  ischeck: task?.check ?? false,
+                  isCheck: task?.check,
                   fn: onChangeCheck,
                 ),
               ),

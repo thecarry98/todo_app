@@ -8,8 +8,10 @@ abstract class TaskRepository {
   Future<Either<AppError, List<TaskEntities>>> getAllTask();
   Future<Either<AppError, List<TaskEntities>>> getTaskComplete();
   Future<Either<AppError, List<TaskEntities>>> getTaskUncomplete();
-  Future<Either<AppError, List<TaskEntities>>> getEditTask(int id);
-  Future<Either<AppError, TaskEntities>> addTask(TaskEntities task);
+  Future<Either<AppError, TaskEntities>> getEditTask(
+      {required int id, required String title, required bool check});
+  Future<Either<AppError, TaskEntities>> addTask(
+      {required String title, required bool check});
 
-  Future<Either<AppError, Void>> deleteTask(int id);
+  Future<Either<AppError, TaskEntities>> deleteTask({required int id});
 }

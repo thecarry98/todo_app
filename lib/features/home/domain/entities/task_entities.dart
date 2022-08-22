@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-class TaskEntities extends Equatable {
+class TaskEntities {
   bool? check;
   String? title;
 
@@ -8,7 +8,6 @@ class TaskEntities extends Equatable {
 
   TaskEntities({this.check, this.title});
 
-  @override
   // TODO: implement props
-  List<Object?> get props => [check, title];
+  // List<Object?> get props => [check, title];
 }

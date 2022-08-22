@@ -17,8 +17,11 @@ class AllPageView extends GetView<AllPageController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: ListView.builder(
-        itemCount: 50,
-        itemBuilder: (context, itemCount) => TaskComponent(),
+        itemCount: controller.list.length,
+        itemBuilder: (context, i) => TaskComponent(
+          onChangeCheck: controller.changeCheckTask(task: cotroller.list[i]),
+          task: controller.list[i],
+        ),
       ),
     );
   }

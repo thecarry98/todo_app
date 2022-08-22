@@ -10,7 +10,7 @@ import '../../domain/repositories/task_repository.dart';
 
 class TaskRepositoryImpl extends TaskRepository {
   @override
-  Future<Either<AppError, Void>> deleteTask(int id) {
+  Future<Either<AppError, TaskEntities>> deleteTask({required int id}) {
     // TODO: implement deleteTask
     throw UnimplementedError();
   }
@@ -18,12 +18,6 @@ class TaskRepositoryImpl extends TaskRepository {
   @override
   Future<Either<AppError, List<TaskEntities>>> getAllTask() {
     // TODO: implement getAllTask
-    throw UnimplementedError();
-  }
-
-  @override
-  Future<Either<AppError, List<TaskEntities>>> getEditTask(int id) {
-    // TODO: implement getEditTask
     throw UnimplementedError();
   }
 
@@ -40,8 +34,16 @@ class TaskRepositoryImpl extends TaskRepository {
   }
 
   @override
-  Future<Either<AppError, TaskEntities>> addTask(TaskEntities task) {
+  Future<Either<AppError, TaskEntities>> addTask(
+      {required String title, required bool check}) {
     // TODO: implement addTask
+    throw UnimplementedError();
+  }
+
+  @override
+  Future<Either<AppError, TaskEntities>> getEditTask(
+      {required int id, required bool check, required String title}) {
+    // TODO: implement getEditTask
     throw UnimplementedError();
   }
 }

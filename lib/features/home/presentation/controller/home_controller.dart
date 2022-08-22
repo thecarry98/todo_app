@@ -14,7 +14,9 @@ class HomeController extends GetxController {
     'All',
     'Unselected',
   ];
+
   var task = TaskEntities().obs;
+  var listTask = <TaskEntities>[].obs;
 
   var checkDialog = false.obs;
 
